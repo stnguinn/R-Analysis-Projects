@@ -1,173 +1,324 @@
-# R-Statistical-Analysis-Projects
-A portfolio of applied statistical analysis projects developed in R, demonstrating exploratory data analysis, regression modeling, clustering, statistical diagnostics, predictive analysis, data visualization, and analytical interpretation.
+# R Statistical Analysis Projects
 
-Overview
+A portfolio of applied statistical analysis projects developed in **R**, demonstrating regression modeling, exploratory data analysis, clustering, statistical diagnostics, predictive analysis, data visualization, and analytical interpretation.
 
-This repository contains selected R projects demonstrating practical application of statistical methods to structured datasets.
+## Overview
 
-The projects focus on translating data into interpretable analytical results through:
+This repository contains selected statistical analysis projects developed in R using structured real-world and instructional datasets.
 
-Exploratory data analysis
-Data preparation and transformation
-Statistical modeling
-Regression analysis
-Model diagnostics
-K-means clustering
-Hierarchical clustering
-Predictive analysis
-Data visualization
-Reproducible analytical workflows
+The purpose of this portfolio is to demonstrate the application of statistical methods to practical analytical questions, including:
 
-The repository is being standardized from earlier individual analyses into a more consistent portfolio structure emphasizing reproducibility, statistical reasoning, and decision-oriented interpretation.
+* Exploratory Data Analysis (EDA)
+* Data preparation and transformation
+* Descriptive statistics
+* Correlation analysis
+* Simple and multiple linear regression
+* Regression diagnostics
+* Predictive modeling
+* K-means clustering
+* Hierarchical clustering
+* Feature standardization
+* Cluster profiling
+* Statistical visualization
+* Analytical interpretation
 
-Projects
-Project	Analytical Methods	Primary Skills Demonstrated
-Toyota Corolla Regression Analysis	Correlation, simple regression, multiple regression, categorical predictors, residual diagnostics, VIF, model selection, validation, prediction intervals	Predictive modeling, model diagnostics, statistical interpretation
-Young Professionals K-Means Analysis	Data standardization, K-means clustering, elbow method, cluster statistics, cluster profiling	Unsupervised learning, segmentation, exploratory modeling
-Employee Hierarchical Cluster Analysis	Variable selection, normalization, Manhattan distance, hierarchical clustering, average linkage, dendrogram analysis	Segmentation, similarity analysis, clustering
-Employee K-Means Cluster Analysis	Standardization, within-cluster sum of squares, elbow method, K-means modeling	Unsupervised learning, employee segmentation
-Austin Weather Analysis	Data preparation, descriptive analysis, ranking, filtering, aggregation and visualization	Exploratory data analysis, time-oriented analysis, ggplot2
-Featured Analysis: Toyota Corolla Price Modeling
+The repository is currently being modernized and standardized to improve code quality, reproducibility, documentation, and decision-oriented interpretation.
 
-The Toyota Corolla project demonstrates an end-to-end regression analysis examining factors associated with vehicle price.
+---
 
-The analysis includes:
+## Featured Project
 
-exploratory summary statistics
-correlation analysis
-simple linear regression
-multiple linear regression
-categorical predictor modeling
-standardized regression coefficients
-residual analysis
-normal probability analysis
-multicollinearity assessment using Variance Inflation Factors
-training and validation data partitioning
-candidate model selection
-prediction of previously unseen observations
-95% prediction intervals
+### Toyota Corolla Regression Analysis
 
-This project demonstrates not only fitting a statistical model, but also evaluating assumptions, examining predictors, validating the modeling process, and applying the resulting model to prediction.
+**File:** [`toyota-corolla-regression-analysis.R`](./toyota-corolla-regression-analysis.R)
 
-Clustering Analysis
+This project examines the relationship between Toyota Corolla vehicle characteristics and price using linear regression techniques.
 
-Several projects examine unsupervised statistical learning techniques.
+### Methods Demonstrated
 
-Methods demonstrated include:
+* Exploratory summary statistics
+* Correlation analysis
+* Simple linear regression
+* Multiple linear regression
+* Categorical predictor variables
+* Standardized regression coefficients
+* Residual analysis
+* Normal probability analysis
+* Variance Inflation Factor (VIF)
+* Multicollinearity assessment
+* Training and validation data partitioning
+* Model comparison and selection
+* Prediction of unseen observations
+* Prediction intervals
 
-variable selection
-feature standardization
-Euclidean and Manhattan distance
-within-cluster sum of squares
-elbow-method analysis
-K-means clustering
-hierarchical clustering
-average-linkage clustering
-dendrogram interpretation
-cluster assignment
-cluster-level descriptive statistics
+### Analytical Objective
 
-These analyses demonstrate approaches for discovering structure and meaningful groups within datasets when predetermined classifications are not available.
+The analysis demonstrates how statistical modeling can be used to identify variables associated with vehicle price, evaluate model assumptions, assess predictor importance, and generate predictions.
 
-Exploratory Data Analysis
+This project will serve as the primary regression-modeling example in the repository.
 
-The Austin weather project demonstrates exploratory analysis of historical weather observations using R.
+---
 
-The workflow includes:
+## Project Portfolio
 
-importing and inspecting structured data
-date transformation
-descriptive statistics
-sorting and filtering observations
-identifying extreme values
-annual aggregation
-exploratory visualizations with ggplot2
-R Technologies and Packages
+| Project                                    | Primary Methods                                                                  | R Script                                                                               |
+| ------------------------------------------ | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| **Toyota Corolla Regression Analysis**     | Linear regression, multiple regression, diagnostics, VIF, prediction, validation | [`toyota-corolla-regression-analysis.R`](./toyota-corolla-regression-analysis.R)       |
+| **Young Professionals K-Means Clustering** | Standardization, K-means, elbow method, cluster profiling                        | [`young-professionals-kmeans-clustering.R`](./young-professionals-kmeans-clustering.R) |
+| **Employee Hierarchical Clustering**       | Standardization, distance metrics, hierarchical clustering, dendrogram analysis  | [`employee-hierarchical-clustering.R`](./employee-hierarchical-clustering.R)           |
+| **Employee K-Means Clustering**            | Feature selection, standardization, K-means, within-cluster analysis             | [`employee-kmeans-clustering.R`](./employee-kmeans-clustering.R)                       |
+| **Austin Weather Analysis**                | Exploratory analysis, aggregation, filtering, ranking, visualization             | [`austin-weather-analysis.R`](./austin-weather-analysis.R)                             |
 
-Primary technologies represented in this repository include:
+---
 
-Language
+## Toyota Corolla Regression Analysis
 
-R
+The Toyota Corolla analysis represents the most comprehensive statistical modeling project currently contained in this repository.
 
-Data manipulation
+The workflow explores relationships between vehicle characteristics and selling price using progressively more advanced regression techniques.
 
-tidyverse
-dplyr
-tidyr
-readr
-purrr
+Key areas demonstrated include:
 
-Visualization
+1. Exploring the dataset and predictor relationships
+2. Examining correlations between numerical variables
+3. Building simple regression models
+4. Developing multiple regression models
+5. Incorporating categorical variables
+6. Evaluating standardized coefficients
+7. Examining regression residuals
+8. Assessing multicollinearity using VIF
+9. Partitioning data into training and validation samples
+10. Comparing candidate models
+11. Predicting previously unseen observations
+12. Calculating prediction intervals
 
-ggplot2
+The project demonstrates the statistical modeling process beyond simply fitting a regression equation by incorporating diagnostics, validation, and predictive interpretation.
 
-Statistical modeling
+---
 
-stats
-lm.beta
-car
-olsrr
+## Young Professionals K-Means Clustering
 
-Cluster analysis
+**File:** [`young-professionals-kmeans-clustering.R`](./young-professionals-kmeans-clustering.R)
 
-cluster
-fpc
-factoextra
+This project applies unsupervised learning techniques to identify groups of observations with similar characteristics.
 
-Statistical Techniques Demonstrated
+### Methods Demonstrated
 
-The repository currently demonstrates experience with:
+* Numerical feature selection
+* Data normalization and standardization
+* K-means clustering
+* Within-cluster sum of squares
+* Elbow-method analysis
+* Cluster assignment
+* Cluster-level summary statistics
+* Cluster profiling
 
-Descriptive statistics
-Correlation analysis
-Simple linear regression
-Multiple linear regression
-Categorical variables in regression
-Regression diagnostics
-Standardized coefficients
-Variance Inflation Factors
-Residual analysis
-Train/validation partitioning
-Model selection
-Prediction intervals
-Data normalization
-K-means clustering
-Hierarchical clustering
-Distance metrics
-Cluster profiling
-Exploratory data visualization
-Repository Modernization
+### Analytical Objective
 
-Earlier analyses in this repository were originally created as independent R exercises and projects.
+The analysis demonstrates how clustering can be used to identify naturally occurring groups within a dataset when predefined classifications are not available.
 
-The repository is currently being standardized to improve:
+---
 
-reproducibility
-project organization
-dependency documentation
-dataset attribution
-statistical interpretation
-visualization
-code consistency
-recruiter-facing documentation
+## Employee Hierarchical Clustering
 
-Future updates will increasingly emphasize the complete analytical workflow:
+**File:** [`employee-hierarchical-clustering.R`](./employee-hierarchical-clustering.R)
 
-Business Question → Data Preparation → Statistical Method → Validation → Findings → Decision Implications
+This project examines employee characteristics using hierarchical clustering techniques.
 
-Portfolio Context
+### Methods Demonstrated
 
-This repository represents the applied statistical-analysis portion of a broader Data & Decision Analytics portfolio.
+* Variable selection
+* Data normalization
+* Distance calculations
+* Manhattan distance
+* Hierarchical clustering
+* Average-linkage clustering
+* Dendrogram visualization
+* Cluster assignment
+* Cluster interpretation
 
-The objective is to demonstrate the ability to move beyond basic reporting and use statistical methods to identify relationships, evaluate uncertainty, segment observations, build predictive models, and support evidence-based decisions.
+### Analytical Objective
 
-Maintainer
+The analysis demonstrates an alternative to partition-based clustering by building a hierarchy of similarity between observations and using that structure to identify groups.
 
-Stan Guinn, M.S.
+---
+
+## Employee K-Means Clustering
+
+**File:** [`employee-kmeans-clustering.R`](./employee-kmeans-clustering.R)
+
+This analysis applies K-means clustering to selected employee characteristics.
+
+### Methods Demonstrated
+
+* Feature selection
+* Numerical data preparation
+* Standardization
+* K-means clustering
+* Within-cluster sum of squares
+* Elbow-method analysis
+* Cluster comparison
+
+This project is currently scheduled for additional code cleanup and documentation as part of the repository modernization process.
+
+---
+
+## Austin Weather Analysis
+
+**File:** [`austin-weather-analysis.R`](./austin-weather-analysis.R)
+
+This project performs exploratory analysis of historical weather observations for Austin, Texas.
+
+### Methods Demonstrated
+
+* CSV data ingestion
+* Data inspection
+* Descriptive statistics
+* Sorting and filtering
+* Date transformation
+* Identification of extreme observations
+* Annual aggregation
+* Conditional analysis
+* Data visualization using `ggplot2`
+
+Examples include identifying the hottest and coldest observations and examining the frequency of specified temperature conditions over time.
+
+---
+
+## Statistical Techniques
+
+The repository demonstrates experience with the following statistical and analytical techniques:
+
+### Exploratory Analysis
+
+* Descriptive statistics
+* Data inspection
+* Data filtering
+* Sorting and ranking
+* Aggregation
+* Feature selection
+* Visualization
+
+### Regression
+
+* Correlation analysis
+* Simple linear regression
+* Multiple linear regression
+* Categorical predictors
+* Standardized coefficients
+* Regression diagnostics
+* Residual analysis
+* Multicollinearity analysis
+* Variance Inflation Factor
+* Model comparison
+* Train/validation partitioning
+* Predictive modeling
+* Prediction intervals
+
+### Unsupervised Learning
+
+* K-means clustering
+* Hierarchical clustering
+* Data standardization
+* Distance metrics
+* Elbow-method analysis
+* Within-cluster sum of squares
+* Cluster profiling
+* Dendrogram analysis
+
+---
+
+## R Technologies
+
+### Core Language
+
+* R
+
+### Data Manipulation
+
+* `dplyr`
+* `tidyr`
+* `readr`
+* `tibble`
+* `purrr`
+* `forcats`
+* `stringr`
+* `lubridate`
+
+### Visualization
+
+* `ggplot2`
+
+### Statistical Modeling
+
+* Base R statistical functions
+* `lm.beta`
+* `car`
+* `olsrr`
+
+### Clustering
+
+* `cluster`
+* `fpc`
+* `factoextra`
+
+---
+
+## Analytical Workflow
+
+The long-term objective of these projects is to demonstrate a complete analytical workflow:
+
+**Analytical Question → Data Preparation → Statistical Method → Model Evaluation → Findings → Decision Implications**
+
+This approach emphasizes not only performing statistical calculations but also interpreting analytical results in a form that can support evidence-based decision-making.
+
+---
+
+## Repository Modernization
+
+Several projects in this repository originated as individual statistical exercises and analyses and are currently being standardized into a more consistent professional portfolio.
+
+Current modernization priorities include:
+
+* [x] Standardize project filenames
+* [x] Create recruiter-facing root documentation
+* [ ] Refactor and clean R scripts
+* [ ] Remove environment-specific working directories
+* [ ] Standardize package dependencies
+* [ ] Improve reproducibility
+* [ ] Add individual project documentation
+* [ ] Add saved analytical outputs and visualizations
+* [ ] Document data sources
+* [ ] Add statistical findings and interpretations
+* [ ] Add business and decision implications
+* [ ] Organize major analyses into individual project directories
+
+---
+
+## Portfolio Focus
+
+This repository represents the **applied statistics and R analysis** component of a broader Data & Decision Analytics portfolio.
+
+The goal is to demonstrate the ability to move beyond descriptive reporting and apply statistical methods to:
+
+* identify relationships within data
+* quantify predictor effects
+* evaluate uncertainty
+* detect patterns and segments
+* assess statistical models
+* generate predictions
+* communicate analytical findings
+* support evidence-based decision-making
+
+---
+
+## Maintainer
+
+**Stanley Guinn, M.S.**
 
 Data & Decision Analytics
-Enterprise Data Analytics
 Statistical Analysis
+Enterprise Data Analytics
 Decision Support
 AI-Augmented Analytics
+
