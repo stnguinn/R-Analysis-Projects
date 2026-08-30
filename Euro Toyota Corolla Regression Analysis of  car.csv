@@ -1,5 +1,5 @@
 #install packages
-install.packages ("tidyverse")
+install.packages (tidyverse)
 
 #load libraries
 library(tidyverse)
